@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格示例</title>
+
+	<!-- DataTables CSS -->
+	<link rel="stylesheet" type="text/css" href="media/css/jquery.dataTables.css">
+	<style type="text/css">
+		th, td{ text-align: center; }
+	</style> 
+</head>
+<body>
+	<!-- tbody必须 -->
+	<table id="table_id" class="display">
+	    <thead>
+	        <tr>
+	            <th>Column 1</th>
+	            <th>Column 2</th>
+	            <th>Operation</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 1 Data 1</td>
+	            <td>Row 1 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	        <tr>
+	            <td>Row 2 Data 1</td>
+	            <td>Row 2 Data 2</td>
+	            <td>delete</td>
+	        </tr>
+	    </tbody>
+	</table>
+
+	<!-- jQuery -->
+	<script type="text/javascript" charset="utf8" src="media/js/jquery.js"></script>
+	 
+	<!-- DataTables -->
+	<script type="text/javascript" charset="utf8" src="media/js/jquery.dataTables.js"></script>
+
+	<script>
+		$(document).ready( function () {
+		    $('#table_id').DataTable({
+		    	 "lengthChange": false, // 禁止手动选择每页条数
+		    	 "ordering": false,  // 禁止手动排序
+		    	 "info": false, // 禁止显示屏幕左下角信息
+		    	 // "serverSide": true,  //服务器端处理模式，和ajax相关
+		    	 // "ajax": {
+		    	 // 	url: '',
+		    	 // 	type:''
+		    	 // } //获取数据
+		    });
+		} );
+	</script>
+
+</body>
+</html>
